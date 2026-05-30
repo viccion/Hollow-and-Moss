@@ -7,15 +7,46 @@
       name="description"
       content="Hollow & Moss creates premium living design objects: atmospheric plant compositions shaped with stone, wood, moss, mineral substrate and warm architectural light."
     />
+    <meta name="theme-color" content="#0a0c0a" />
+
+    <!-- Social / Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hollow & Moss | Living Design Objects" />
+    <meta
+      property="og:description"
+      content="Quiet ecosystems for interior spaces. Atmospheric compositions of stone, moss, shadow and warm light."
+    />
+    <meta property="og:image" content="assets/hero-amazing.png" />
+    <meta property="og:url" content="https://hollowandmoss.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hollow & Moss | Living Design Objects" />
+    <meta
+      name="twitter:description"
+      content="Quiet ecosystems for interior spaces. Atmospheric compositions of stone, moss, shadow and warm light."
+    />
+    <meta name="twitter:image" content="assets/hero-amazing.png" />
+
     <title>Hollow & Moss | Living Design Objects</title>
     <link rel="icon" type="image/png" href="assets/icon.PNG" />
+
+    <!-- Type: Cormorant Garamond (display) + Plus Jakarta Sans (body/UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="ambient-fog fog-a"></div>
-    <div class="ambient-fog fog-b"></div>
+    <a class="skip-link" href="#objects">Skip to content</a>
+
+    <div class="ambient-fog fog-a" aria-hidden="true"></div>
+    <div class="ambient-fog fog-b" aria-hidden="true"></div>
     <div class="ember-field" aria-hidden="true"></div>
     <canvas id="atmosphere" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
 
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand-lockup" href="#top" aria-label="Hollow & Moss home">
@@ -25,36 +56,39 @@
       <nav class="nav-links" aria-label="Site navigation">
         <a href="#objects">Objects</a>
         <a href="#substrate">Substrate</a>
+        <a href="#about">Studio</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="mist mist-one"></div>
-        <div class="mist mist-two"></div>
+        <div class="mist mist-one" aria-hidden="true"></div>
+        <div class="mist mist-two" aria-hidden="true"></div>
         <div class="hero-copy">
-          <p class="eyebrow">Living Design Objects</p>
-          <img class="hero-sigil" src="assets/icon.PNG" alt="" />
-          <h1 id="hero-title">Hollow &amp; Moss</h1>
-          <p class="hero-line">Quiet ecosystems for interior spaces.</p>
-          <p class="hero-text">
-            Atmospheric plant compositions shaped with stone, wood, shadow and
-            warm architectural light.
+          <p class="eyebrow" data-reveal>Living Design Objects</p>
+          <img class="hero-sigil" src="assets/icon.PNG" alt="" data-reveal />
+          <h1 id="hero-title" data-reveal>Hollow &amp; Moss</h1>
+          <p class="hero-line" data-reveal>
+            Quiet ecosystems for interior spaces. Atmospheric compositions of
+            stone, moss, shadow and warm light.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a href="#objects">Enter the objects</a>
-            <a href="#contact">Private commission</a>
+          <div class="hero-actions" aria-label="Primary actions" data-reveal>
+            <a class="btn btn-primary" href="#objects">
+              <span>Enter the objects</span>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <span>Private commission</span>
+            </a>
           </div>
         </div>
-        <div class="scroll-note">Bespoke interior objects</div>
+        <div class="scroll-note" aria-hidden="true">Bespoke interior objects</div>
       </section>
 
       <section class="manifesto" aria-label="Brand manifesto">
-        <p class="section-kicker">Objects with atmosphere</p>
         <div class="manifesto-grid">
-          <h2>Not plants in pots. Small interior landscapes with a private weather.</h2>
-          <p>
+          <h2 data-reveal>Not plants in pots. Small interior landscapes with a private weather.</h2>
+          <p data-reveal>
             Hollow &amp; Moss is a boutique living design brand focused on
             atmospheric plant compositions for interior spaces. We create
             curated living objects: sculptural ecosystems that combine foliage,
@@ -65,15 +99,15 @@
       </section>
 
       <section class="landscape-strip" aria-label="Brand landscape inspirations">
-        <div class="landscape-panel forest">
+        <div class="landscape-panel forest" data-reveal>
           <span>Quiet forests</span>
           <p>Moss, bark, mineral humidity and the feeling of finding a living fragment under canopy shade.</p>
         </div>
-        <div class="landscape-panel lava">
+        <div class="landscape-panel lava" data-reveal>
           <span>Volcanic landscapes</span>
           <p>Black lava, charcoal, red stone and foliage that feels like heat held beneath the surface.</p>
         </div>
-        <div class="landscape-panel shadow">
+        <div class="landscape-panel shadow" data-reveal>
           <span>Warm shadows</span>
           <p>Objects designed for low light, indirect glow and rooms where atmosphere is the material.</p>
         </div>
@@ -81,10 +115,9 @@
 
       <section class="cinematic-world" aria-label="Hollow and Moss cinematic world">
         <div class="world-copy">
-          <p class="section-kicker">Contained weather</p>
-          <h2>The piece is not placed in the room. It changes the room.</h2>
+          <h2 data-reveal>The piece is not placed in the room. It changes the room.</h2>
         </div>
-        <div class="world-image">
+        <div class="world-image" data-reveal>
           <img
             src="assets/hero-amazing.png"
             alt="A cinematic Hollow and Moss living design object emerging from mist and warm shadow."
@@ -94,11 +127,11 @@
 
       <section class="objects" id="objects" aria-label="Collections">
         <div class="section-heading">
-          <p class="section-kicker">The objects</p>
-          <h2>Three compositions, each with its own terrain.</h2>
+          <p class="section-kicker" data-reveal>The objects</p>
+          <h2 data-reveal>Three compositions, each with its own terrain.</h2>
         </div>
 
-        <article class="object-card">
+        <article class="object-card" data-reveal>
           <div class="object-media">
             <img
               src="assets/collection-sotobosque.png"
@@ -122,7 +155,7 @@
           </div>
         </article>
 
-        <article class="object-card reverse">
+        <article class="object-card reverse" data-reveal>
           <div class="object-media">
             <img
               src="assets/collection-ashfall.png"
@@ -145,7 +178,7 @@
           </div>
         </article>
 
-        <article class="object-card">
+        <article class="object-card feature" data-reveal>
           <div class="object-media">
             <img
               src="assets/collection-salt-tropical.png"
@@ -171,9 +204,8 @@
 
       <section class="substrate" id="substrate">
         <div class="substrate-panel">
-          <p class="section-kicker">The hidden architecture</p>
-          <h2>A premium substrate is the part you rarely see and always feel.</h2>
-          <p>
+          <h2 data-reveal>A premium substrate is the part you rarely see and always feel.</h2>
+          <p data-reveal>
             Each object begins below the surface: a refined living base layered
             for drainage, oxygen, mineral stability and slow moisture release.
             Lava rock, charcoal, bark, pumice, moss and selected aggregates are
@@ -182,22 +214,22 @@
         </div>
 
         <div class="substrate-list" aria-label="Substrate details">
-          <article>
+          <article data-reveal>
             <span>01</span>
             <h3>Drainage</h3>
             <p>Mineral structure that keeps the object breathable below the visible landscape.</p>
           </article>
-          <article>
+          <article data-reveal>
             <span>02</span>
             <h3>Charcoal</h3>
             <p>Activated charcoal and lava rock stabilize moisture, texture and depth.</p>
           </article>
-          <article>
+          <article data-reveal>
             <span>03</span>
             <h3>Humidity</h3>
             <p>Moss pockets hold a quiet interior climate without feeling overgrown.</p>
           </article>
-          <article>
+          <article data-reveal>
             <span>04</span>
             <h3>Shadow</h3>
             <p>Dark bark, walnut, stone and concealed light create the final atmosphere.</p>
@@ -207,9 +239,8 @@
 
       <section class="atelier" aria-label="Atelier note">
         <div>
-          <p class="section-kicker">Atelier note</p>
-          <h2>A fragment of a hidden landscape. A small atmosphere contained within an object.</h2>
-          <p>
+          <h2 data-reveal>A fragment of a hidden landscape. A small atmosphere contained within an object.</h2>
+          <p data-reveal>
             Inspired by Japanese minimalism, dark boutique interiors, natural
             textures and the contrast between organic life and structured
             design.
@@ -219,16 +250,16 @@
 
       <section class="about" id="about">
         <div class="about-heading">
-          <p class="section-kicker">About us</p>
-          <h2>Designed in Davenport by two people who read rooms like landscapes.</h2>
+          <p class="section-kicker" data-reveal>The studio</p>
+          <h2 data-reveal>Designed in Davenport by two people who read rooms like landscapes.</h2>
         </div>
         <div class="about-story">
-          <p>
+          <p data-reveal>
             Hollow &amp; Moss is led by Victor Castillo and Lily Villamizar, a
             Davenport-based duo shaped by chemistry, architecture, photography
             and a shared affection for quiet plant life.
           </p>
-          <p>
+          <p data-reveal>
             Victor, a chemical engineer, approaches every piece from the hidden
             structure below the surface: substrate, drainage, mineral balance,
             humidity and the slow conditions that allow a living object to hold
@@ -236,7 +267,7 @@
             visible world: proportion, shadow, texture, light and the cinematic
             silence of the final composition.
           </p>
-          <p>
+          <p data-reveal>
             What began as a private ritual of collecting moss, stone, wood and
             unusual foliage became a language for interiors. Their work is
             sentimental in the quietest way: a memory of forests after rain,
@@ -248,10 +279,10 @@
 
       <section class="contact" id="contact">
         <div class="contact-copy">
-          <img class="contact-sigil" src="assets/icon.PNG" alt="" />
-          <p class="section-kicker">Private commissions</p>
-          <h2>Bring a quiet ecosystem into the room.</h2>
-          <p>
+          <img class="contact-sigil" src="assets/icon.PNG" alt="" data-reveal />
+          <p class="section-kicker" data-reveal>Private commissions</p>
+          <h2 data-reveal>Bring a quiet ecosystem into the room.</h2>
+          <p data-reveal>
             Tell us about the room, the mood, the scale and the kind of
             landscape you want to hold there.
           </p>
@@ -261,6 +292,7 @@
           action="mailto:Hello@Hollowandmoss.com"
           method="post"
           enctype="text/plain"
+          data-reveal
         >
           <label>
             <span>Name</span>
@@ -276,7 +308,7 @@
               <option value="">Select one</option>
               <option>Sotobosque</option>
               <option>Ashfall</option>
-              <option>Salt & Tropical</option>
+              <option>Salt &amp; Tropical</option>
               <option>Bespoke living object</option>
             </select>
           </label>
@@ -289,7 +321,9 @@
               required
             ></textarea>
           </label>
-          <button type="submit">Send inquiry</button>
+          <button class="btn btn-solid" type="submit">
+            <span>Send inquiry</span>
+          </button>
           <address>
             <a href="mailto:Hello@Hollowandmoss.com">Hello@Hollowandmoss.com</a>
             <a href="tel:+14075584052">+1 407 558 4052</a>
@@ -297,6 +331,28 @@
         </form>
       </section>
     </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="footer-brand">
+        <a class="brand-lockup" href="#top" aria-label="Hollow & Moss home">
+          <img src="assets/icon.PNG" alt="" />
+          <span>Hollow &amp; Moss</span>
+        </a>
+        <p>Quiet ecosystems for interior spaces. Designed and composed in Davenport, Florida.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#objects">Objects</a>
+        <a href="#substrate">Substrate</a>
+        <a href="#about">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:Hello@Hollowandmoss.com">Hello@Hollowandmoss.com</a>
+        <a href="tel:+14075584052">+1 407 558 4052</a>
+      </div>
+      <p class="footer-legal">&copy; <span id="year">2026</span> Hollow &amp; Moss. Living design objects.</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
